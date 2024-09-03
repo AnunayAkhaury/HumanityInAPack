@@ -1,3 +1,4 @@
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTiktok, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
@@ -14,7 +15,7 @@ export default function Contact() {
             Get in Touch
           </h3>
           <p className="text-gray-600 mb-6">
-            We'd love to hear from you! Reach out to us to learn more about our initiatives, volunteer opportunities, and how you can support our cause.
+            We would love to hear from you! Reach out to us to learn more about our initiatives, volunteer opportunities, and how you can support our cause.
           </p>
           <div className="flex space-x-4">
             <a href="#" className="text-gray-600 hover:text-gray-900">

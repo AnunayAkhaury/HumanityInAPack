@@ -6,7 +6,7 @@ export default function Stories() {
             Stories of Impact
           </h2>
           <blockquote className="text-white text-3xl md:text-4xl font-bold leading-snug">
-            “Receiving a care package from 'Humanity in a Pack' made a significant difference in my life. It gave me hope and reminded me that I am not alone in this world.”
+            “Receiving a care package from Humanity in a Pack made a significant difference in my life. It gave me hope and reminded me that I am not alone in this world.”
           </blockquote>
         </div>
       </section>
