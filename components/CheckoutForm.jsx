@@ -1,4 +1,3 @@
-// components/CheckoutForm.jsx
 import React, { useState } from 'react';
 import { PaymentElement, useStripe, useElements } from '@stripe/react-stripe-js';
 
@@ -21,7 +20,7 @@ const CheckoutForm = () => {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: 'https://humanity-in-a-pack-lcjtzolvd-anunayakhaurys-projects.vercel.app',
+        return_url: 'https://humanity-in-a-pack.vercel.app/',
       },
     });
 

@@ -1,4 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Humanity in a Pack
+
+Single-page Next.js application for the non-profit organization HumanityInAPack, featuring Stripe integration for donations and Resend email integration for communication.
+
+
+## API Reference
+
+#### Send Email
+
+```http
+  POST /api/send-email
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `user_name` | `string` | **Required**. Name of the user |
+| `user_email` | `string` | **Required**. Email of user |
+| `message` | `string` | **Required**. Message Content |
+
+#### Stripe Payment
+
+```http
+ POST /api/create-payment-intent
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `amount`      | `int` | **Required**. Amount to charge |
+
+#### Creates a payment intent using Stripe API.
 
 ## Getting Started
 
@@ -16,21 +45,18 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run this project, you will need to add the following environment variables to your .env file
 
-## Learn More
+`NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`
 
-To learn more about Next.js, take a look at the following resources:
+`STRIPE_SECRET_KEY`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`RESEND_API_KEY`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+**Client:** React, TailwindCSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Server:** Next.js
