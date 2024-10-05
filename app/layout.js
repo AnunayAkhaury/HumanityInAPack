@@ -2,15 +2,15 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'My App',
-  description: 'App description',
+  title: 'Humanity in a Pack',
+  description: 'Humanity in a Pack',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {children}  {/* No Stripe elements here, only global structure */}
+        {children}  
       </body>
     </html>
   );
