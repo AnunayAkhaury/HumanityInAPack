@@ -8,22 +8,22 @@ export default function Impact() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 
             <div className="flex flex-col items-center">
-              <div className="bg-white h-1 w-8 mb-2"></div> {/* Simple rectangle as placeholder */}
+              <div className="bg-white h-1 w-8 mb-2"></div> 
               <p className="text-lg font-medium">Care Packages Distributed</p>
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="bg-white h-1 w-8 mb-2"></div> {/* Simple rectangle as placeholder */}
+              <div className="bg-white h-1 w-8 mb-2"></div> 
               <p className="text-lg font-medium">Volunteers Engaged</p>
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="bg-white h-1 w-8 mb-2"></div> {/* Simple rectangle as placeholder */}
+              <div className="bg-white h-1 w-8 mb-2"></div> 
               <p className="text-lg font-medium">Community Partners</p>
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="bg-white h-1 w-8 mb-2"></div> {/* Simple rectangle as placeholder */}
+              <div className="bg-white h-1 w-8 mb-2"></div> 
               <p className="text-lg font-medium">Years of Impact</p>
             </div>
           </div>

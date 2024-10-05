@@ -8,7 +8,7 @@ export default function Contact() {
   const sendEmail = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setMessage(''); // Clear previous messages
+    setMessage(''); 
 
     const formData = {
       user_name: form.current.user_name.value,
@@ -25,7 +25,7 @@ export default function Contact() {
 
       if (response.ok) {
         setMessage('Email sent successfully!');
-        form.current.reset(); // Reset the form
+        form.current.reset();
       } else {
         setMessage('Failed to send email.');
       }

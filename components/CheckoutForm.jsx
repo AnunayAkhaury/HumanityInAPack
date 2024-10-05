@@ -9,26 +9,23 @@ const CheckoutForm = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (event) => {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault();
     setLoading(true);
-    setErrorMessage(''); // Clear any previous error messages
+    setErrorMessage(''); 
 
     if (!stripe || !elements) {
       setLoading(false);
       return;
     }
 
-    // Use stripe.confirmPayment to handle the payment submission
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        // Return URL after payment confirmation (adjust this to your success page)
         return_url: 'https://humanity-in-a-pack-lcjtzolvd-anunayakhaurys-projects.vercel.app',
       },
     });
 
     if (error) {
-      // Show error to your customer
       setErrorMessage(error.message);
       setLoading(false);
     }

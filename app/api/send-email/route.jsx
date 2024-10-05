@@ -19,7 +19,7 @@ export async function POST(req) {
         ),
       });
   
-      console.log("Email sent successfully:", data);  // <-- Log the response from Resend
+      console.log("Email sent successfully:", data);  
   
       return new Response(JSON.stringify({ success: true, data }), { status: 200 });
     } catch (error) {

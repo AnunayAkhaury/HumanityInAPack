@@ -10,8 +10,8 @@ const MapComponent = () => {
   };
 
   const defaultCenter = {
-    lat: 37.7749, // Replace with your latitude
-    lng: -122.4194, // Replace with your longitude
+    lat: 37.7749, 
+    lng: -122.4194, 
   };
 
   return (

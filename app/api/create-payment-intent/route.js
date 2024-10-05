@@ -16,7 +16,6 @@ export async function POST(req) {
       },
     });
 
-    // Send the clientSecret to the frontend
     return NextResponse.json({ clientSecret: paymentIntent.client_secret });
   } catch (error) {
     return NextResponse.json({ error: error.message }, { status: 500 });
